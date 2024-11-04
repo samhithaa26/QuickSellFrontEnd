@@ -1,0 +1,103 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start; /* Aligns content to the left */
+  position: relative;
+}
+
+.display-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.display-button.active {
+  background-color: darkslategray; /* Darker color when active */
+}
+
+
+.display-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.display-menu label {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.display-menu select {
+  width: 100%;
+  margin-top: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.kanban-board {
+  display: flex;
+  gap: 15px; /* Adjusts spacing between columns */
+  flex-wrap: nowrap; /* Ensures columns stay in a single row */
+  justify-content: center; /* Centers the board */
+}
+
+.kanban-column {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+  width: 150px; /* Reduced width for more columns in a row */
+  min-width: 150px;
+}
+
+.ticket-card {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-align: left;
+}
+
+.ticket-card img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.ticket-card h4 {
+  display: inline;
+  font-size: 16px;
+  margin: 0;
+}
+
+.ticket-card p {
+  font-size: 12px;
+  color: #555;
+}
